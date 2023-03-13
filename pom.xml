@@ -14,4 +14,29 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.clickhouse</groupId>
+            <artifactId>clickhouse-jdbc</artifactId>
+            <version>0.4.0</version>
+            <!-- use uber jar with all dependencies included, change classifier to http for smaller jar -->
+            <classifier>all</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>com.clickhouse</groupId>
+            <!-- or clickhouse-grpc-client if you prefer gRPC -->
+            <artifactId>clickhouse-http-client</artifactId>
+            <version>0.4.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.20.0</version>
+        </dependency>
+
+    </dependencies>
+
 </project>
